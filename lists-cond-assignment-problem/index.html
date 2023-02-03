@@ -20,11 +20,11 @@
       <h2>Assignment</h2>
       <input type="text" v-model="task">
       <button @click="addTask">Add Task</button>
-      <ul v-show="showList">
+      <ul v-show="showTaskList">
         <li v-for="task in tasks">{{ task }}</li>
       </ul>
       <div class="button-wrapper">
-        <button @click="toggleList">{{ buttonCaption }}</button>
+        <button @click="toggleList">{{ buttonCaption }} tasklist</button>
       </div>
     </section>
   </body>

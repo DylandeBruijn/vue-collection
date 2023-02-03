@@ -3,7 +3,7 @@ Vue.createApp({
     return {
       task: 'test',
       tasks: [],
-      showList: true
+      showTaskList: true
     };
   },
   methods: {
@@ -11,12 +11,12 @@ Vue.createApp({
       this.tasks.push(this.task);
     },
     toggleList() {
-      this.showList = !this.showList;
+      this.showTaskList = !this.showTaskList;
     }
   },
   computed: {
     buttonCaption() {
-      return this.showList ? 'Hide' : 'Show';
+      return this.showTaskList ? 'Hide' : 'Show';
     }
   }
 }).mount("#assignment");
